@@ -11,14 +11,15 @@
 			Kupiti
 		</label>
 
-		<label id="Artikal">
+		<label id="labelArtikal">
 			Artikal
 		</label>
 		<input type="text" name="Artikal" id="Artikal">
-		<input type="submit" name="Dodaj" placeholder="Dodaj" id="Dodaj" value="Dodaj">
-		
-
-		
+		<input type="submit" name="Dodaj" placeholder="Dodaj" id="Dodaj" value="Dodaj" onclick="return onclickValidateArtikal()">
+		<ul>
+			<li> 3 hljeba <input type="checkbox" name="" ></li>
+			<li> Skajusa <input type="checkbox" name=""></li>
+		</ul>
 	</div>
 	<div id="Cont_Stanje">
 		<div style="text-align: center;">
@@ -39,14 +40,14 @@
 	Potroseno
 </label>
 <input type="text" name="Potroseno" id="Potroseno">
-<input type="submit" name="submit" id="Potr" value="Unesi">
+<input type="submit" name="submit" id="Potr" value="Unesi" onclick="return onclickValidateUnos()">
 </br>
 
 <label class="Lab">
 	Dodaj Cimera
 </label>
 <input type="text" name="name" id="Stanar" >
-<input type="Submit" name="Stanar" placeholder="Stanar" id="Sta" value="Unesi">
+<input type="Submit" name="Stanar" placeholder="Stanar" id="Sta" value="Unesi" onclick="return onclickValidateDodaj()">
 </br>
 <label id="Mjes">
 	Novi Mjesec
@@ -59,13 +60,8 @@
 	<label id="Cimeri">
 		Cimeri
 	</label>
-
-	
 </div>
-
-
-		
-	
-
 </body>
+
+<script type="text/javascript" src="../JavaScript/ValidacijaEvidencije.js"></script>
 </html>
